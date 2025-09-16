@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encrypt/Decrypt</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Encrypt / Decrypt</h1>
+    <textarea id="message" rows="5" placeholder="Enter or paste your message"></textarea>
+    <input type="text" id="password" placeholder="Enter the password">
+    <div class="btn-group">
+      <button id="encryptButton" onclick="encryptMessage()">Encrypt</button>
+      <button id="decryptButton" onclick="decryptMessage()">Decrypt</button>
+    </div>
+    <div id="output"></div>
+    <button id="copyButton" onclick="copyOutput()">Copy</button>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
